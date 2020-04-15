@@ -21,10 +21,8 @@ window.addEventListener('load', function () {
 function initEvents() {
     let prevPageBtn = document.getElementById('prev_page');
     let nextPageBtn = document.getElementById('next_page');
-    let goToPage = document.getElementById('go_to_page');
     prevPageBtn.addEventListener('click', renderPreviousPage);
     nextPageBtn.addEventListener('click',renderNextPage);
-    goToPage.addEventListener('click', goToPageNum);
 }
 
 // init when window is loaded

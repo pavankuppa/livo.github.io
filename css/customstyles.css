@@ -580,25 +580,25 @@ body {
   padding: 15px 35px;
 }
 
-.About-sec1 {
+.About-sec1, .covid19-sec1 {
   background-color: #f9fcff;
   padding: 200px 0px 0px 0px;
   position: relative;
   margin-bottom: 300px;
 }
 
-.About-sec1 h1 {
+.About-sec1 h1, .covid19-sec1 h1 {
   font-size: 94px;
   line-height: 114px;
   color: #3D4146;
   font-weight: 600;
 }
 
-.About-sec1 h1 span {
+.About-sec1 h1 span, .covid19-sec1 h1 span {
   color: #f1574b;
 }
 
-.About-sec1 p {
+.About-sec1 p, .covid19-sec1 p {
   font-size: 20px;
   line-height: 38px;
   color: #5C5856;
@@ -758,6 +758,9 @@ display: block;
   background-color: #3d4146;
   position: relative;
   padding: 150px 0 60px 0;
+}
+.covid19-sec2 {
+  padding: 20px 120px;
 }
 
 .About-sec5::before {
