@@ -28,19 +28,13 @@ function initEvents() {
 // init when window is loaded
 function initPDFRenderer() {
     const url = './docs/2019-nCoV-IgMIgG_Product_LIVO.pdf'; // replace with your pdf location
-    // const cMapUrl = '/cmaps/';
-    // const cMapPacked = true;
     let option  = { url};
-
-
     pdfjsLib.getDocument(option).promise.then(pdfData => {
         totalPages = pdfData.numPages;
-        let pagesCounter= document.getElementById('total_page_num');
-        pagesCounter.textContent = totalPages;
-
+        //let pagesCounter= document.getElementById('total_page_num');
+        //pagesCounter.textContent = totalPages;
         // assigning read pdfContent to global variable
         pdf = pdfData;
-        console.log(pdfData);
         renderPage(currentPageNum);
     });
 }
