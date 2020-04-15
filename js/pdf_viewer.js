@@ -41,7 +41,6 @@ function initPDFRenderer() {
 
 function renderPage(pageNumToRender = 1, scale = 1) {
     isPageRendering = true;
-    document.getElementById('current_page_num').textContent = pageNumToRender;
     pdf.getPage(pageNumToRender).then(page => {
         const viewport = page.getViewport({scale :1});
         canvas.height = viewport.height;
