@@ -43,8 +43,8 @@ function renderPage(pageNumToRender = 1, scale = 1) {
     isPageRendering = true;
     pdf.getPage(pageNumToRender).then(page => {
         const viewport = page.getViewport({scale :1});
-        canvas.height = viewport.height;
-        canvas.width = viewport.width;
+        //canvas.height = viewport.height;
+        //canvas.width = viewport.width;
         let renderCtx = {canvasContext ,viewport};
         page.render(renderCtx).promise.then(()=> {
             isPageRendering = false;
