@@ -580,11 +580,17 @@ body {
   padding: 15px 35px;
 }
 
-.About-sec1, .covid19-sec1 {
+.About-sec1, {
   background-color: #f9fcff;
   padding: 200px 0px 0px 0px;
   position: relative;
   margin-bottom: 300px;
+}
+
+.covid19-sec1 {
+  background-color: #f9fcff;
+  padding: 200px 0px 0px 0px;
+  position: relative;
 }
 
 .About-sec1 h1, .covid19-sec1 h1 {
@@ -759,6 +765,7 @@ display: block;
   position: relative;
   padding: 150px 0 60px 0;
 }
+
 .covid19-sec2 {
   padding: 20px 120px;
 }
