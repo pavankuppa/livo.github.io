@@ -42,10 +42,10 @@ function initPDFRenderer() {
 function renderPage(pageNumToRender = 1, scale = 1) {
     isPageRendering = true;
     pdf.getPage(pageNumToRender).then(page => {
-        //const viewport = page.getViewport({scale :1});
-        const viewport = page.getViewport();
-        //canvas.height = viewport.height;
-        //canvas.width = viewport.width;
+        const viewport = page.getViewport({scale :1.5});
+        //const viewport = page.getViewport();
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
         let renderCtx = {canvasContext ,viewport};
         page.render(renderCtx).promise.then(()=> {
             isPageRendering = false;
